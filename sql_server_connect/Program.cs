@@ -97,6 +97,7 @@ namespace sql_server_connect
                     // "select TABLE_NAME from INFORMATION_SCHEMA.TABLES where TABLE_TYPE = 'BASE TABLE' and TABLE_NAME != 'sysdiagrams'",
                      "select column_name from information_schema.columns where table_name ='" + s + "' order by ordinal_position", connection1);
                 //connection1.Open();
+                Console.WriteLine("Hello world!");
                 using (SqlConnection conn = new SqlConnection(connStr))
                 {
                     conn.Open();
